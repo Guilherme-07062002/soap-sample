@@ -10,7 +10,6 @@ app.get('/', (req, res) => {
 });
 
 app.post('/divide', async (req, res) => {
-  // Exemplo de uso
   const result = await callDivideService(25, 5)
     .then(result => {
       console.log('Resultado da divisão:', result);
