@@ -62,6 +62,13 @@
   dependencies:
     "@types/node" "*"
 
+"@types/easy-soap-request@^4.1.4":
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/@types/easy-soap-request/-/easy-soap-request-4.1.4.tgz#71ec34ef12b42cf9b72908603313640d73056891"
+  integrity sha512-KvrxS/a46n23iiMTt1bmEqWx7MS65TaL6gF7OHVpldGZKsYZehIPb5sHomepSK/fGnTElWSwa5xATK32O8iLeQ==
+  dependencies:
+    axios "^0.21.1"
+
 "@types/express-serve-static-core@^4.17.33":
   version "4.17.43"
   resolved "https://registry.npmjs.org/@types/express-serve-static-core/-/express-serve-static-core-4.17.43.tgz"
@@ -189,7 +196,14 @@ asynckit@^0.4.0:
   resolved "https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz"
   integrity sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==
 
-axios@^1.7.2:
+axios@^0.21.1:
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
+  integrity sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==
+  dependencies:
+    follow-redirects "^1.14.0"
+
+axios@^1.6.7, axios@^1.7.2:
   version "1.7.2"
   resolved "https://registry.npmjs.org/axios/-/axios-1.7.2.tgz"
   integrity sha512-2A8QhOMrbomlDuiLeK9XibIBzuHeRcqqNOHp0Cyp5EoJ1IFDh+XZH3A6BkXtv0K4gFGCI0Y4BM7B1wOEi0Rmgw==
@@ -384,6 +398,13 @@ dynamic-dedupe@^0.3.0:
   dependencies:
     xtend "^4.0.0"
 
+easy-soap-request@^5.6.1:
+  version "5.6.1"
+  resolved "https://registry.yarnpkg.com/easy-soap-request/-/easy-soap-request-5.6.1.tgz#8ababc4bcbbbe7889531b13509e1dc9950e0a7cd"
+  integrity sha512-Sbq59ZHUYcND8w0Y2XZ13X7hbF6gUZQlWC8pBwCaqULLE44FY7Ph6UdG0c+ndBUJt9r77M4VCteieHg1JooeJA==
+  dependencies:
+    axios "^1.6.7"
+
 ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz"
@@ -473,7 +494,7 @@ finalhandler@1.2.0:
     statuses "2.0.1"
     unpipe "~1.0.0"
 
-follow-redirects@^1.15.6:
+follow-redirects@^1.14.0, follow-redirects@^1.15.6:
   version "1.15.6"
   resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.6.tgz"
   integrity sha512-wWN62YITEaOpSK584EZXJafH1AGpO8RVgElfkuXbTOrPX4fIfOyEpW/CsiNd8JdYrAoOvafRTOEnvsO++qCqFA==

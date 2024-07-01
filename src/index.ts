@@ -5,20 +5,21 @@ import { callDivideService } from './send-request';
 const app = express();
 const server = http.createServer(app);
 
+app.use(express.json());
+
 app.get('/', (req, res) => {
   res.send('Hello World');
 });
 
 app.post('/divide', async (req, res) => {
-  const result = await callDivideService(25, 5)
-    .then(result => {
-      console.log('Resultado da divisão:', result);
-    })
-    .catch(error => {
-      console.error('Erro:', error);
-    });
+  const body = req.body;
+  const intA = parseInt(body.intA);
+  const intB = parseInt(body.intB);
 
-  res.send('Resultado da divisão: ' + result);
+  const result = await callDivideService(intA, intB);
+  res.send({
+    result: parseInt(result),
+  });
 })
 
 server.listen(3000, () => {
